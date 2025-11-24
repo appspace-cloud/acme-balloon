@@ -12,6 +12,6 @@ entries:
     name: acme-balloon
     type: application
     urls:
-    - https://marandalucas.github.io/acme-balloon/acme-balloon-0.1.1.tgz
+    - https://appspace-cloud.github.io/acme-balloon/acme-balloon-0.1.1.tgz
     version: 0.1.1
 generated: "2025-11-21T14:00:05.59325+01:00"

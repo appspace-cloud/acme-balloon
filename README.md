@@ -22,7 +22,7 @@ ACME Balloon creates lightweight pods that:
 
 Add the repository:
 ```bash
-helm repo add acme-balloon https://marandalucas.github.io/acme-balloon
+helm repo add acme-balloon https://appspace-cloud.github.io/acme-balloon
 helm repo update
 ```
 
@@ -239,12 +239,12 @@ serviceAccountName: acme-balloon-sa
 This chart is available from the public Helm repository:
 
 ```bash
-helm repo add acme-balloon https://marandalucas.github.io/acme-balloon
+helm repo add acme-balloon https://appspace-cloud.github.io/acme-balloon
 helm repo update
 helm search repo acme-balloon
 ```
 
-Repository URL: https://marandalucas.github.io/acme-balloon
+Repository URL: https://appspace-cloud.github.io/acme-balloon
 
 ## Contributing
 

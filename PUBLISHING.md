@@ -70,7 +70,7 @@ Once published, users can install the chart with:
 
 ```bash
 # Add the repository
-helm repo add acme-balloon https://marandalucas.github.io/acme-balloon
+helm repo add acme-balloon https://appspace-cloud.github.io/acme-balloon
 helm repo update
 
 # Search for the chart
@@ -83,7 +83,7 @@ helm install my-release acme-balloon/acme-balloon
 ## Repository URL
 
 The public repository is available at:
-**https://marandalucas.github.io/acme-balloon**
+**https://appspace-cloud.github.io/acme-balloon**
 
 This URL serves the `index.yaml` file and chart packages from the `docs/` directory via GitHub Pages.
 

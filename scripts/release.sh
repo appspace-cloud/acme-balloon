@@ -49,7 +49,7 @@ helm package . -d docs/
 
 # Generar index.yaml
 echo "📝 Generating index.yaml..."
-helm repo index docs/ --url https://marandalucas.github.io/acme-balloon/
+helm repo index docs/ --url https://appspace-cloud.github.io/acme-balloon/
 
 echo ""
 echo "✅ Chart packaged successfully!"

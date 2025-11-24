@@ -4,7 +4,7 @@ This guide will help you set up the public Helm repository on GitHub Pages.
 
 ## Step 1: Enable GitHub Pages
 
-1. Go to your GitHub repository: https://github.com/marandalucas/acme-balloon
+1. Go to your GitHub repository: https://github.com/appspace-cloud/acme-balloon
 2. Click on **Settings**
 3. Scroll down to **Pages** in the left sidebar
 4. Under **Source**, select:
@@ -32,7 +32,7 @@ After pushing, wait a few minutes for GitHub Pages to deploy, then test:
 
 ```bash
 # Add the repository
-helm repo add acme-balloon https://marandalucas.github.io/acme-balloon
+helm repo add acme-balloon https://appspace-cloud.github.io/acme-balloon
 
 # Update repositories
 helm repo update

@@ -33,7 +33,7 @@ jobs:
 
       - name: Generate index
         run: |
-          helm repo index docs/ --url https://marandalucas.github.io/acme-balloon/
+          helm repo index docs/ --url https://appspace-cloud.github.io/acme-balloon/
 
       - name: Create Release
         if: startsWith(github.ref, 'refs/tags/')

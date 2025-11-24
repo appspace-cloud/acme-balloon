@@ -45,7 +45,7 @@ jobs:
 
       - name: Generate index
         run: |
-          helm repo index docs/ --url https://marandalucas.github.io/acme-balloon/
+          helm repo index docs/ --url https://appspace-cloud.github.io/acme-balloon/
           # Copy index.html if it exists
           if [ -f docs/index.html ]; then
             echo "index.html already exists in docs/"
