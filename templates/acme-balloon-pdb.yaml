@@ -1,0 +1,16 @@
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ .Values.name | default "acme-balloon" }}
+  namespace: {{ .Values.namespace | default "acme-balloon" }}
+  labels:
+    {{- include "acme-balloon.labels" . | nindent 4 }}
+spec:
+  # Ensure at least one pod is always available
+  # This prevents complete disruption of the balloon service
+  minAvailable: 1
+  selector:
+    matchLabels:
+      {{- include "acme-balloon.selectorLabels" . | nindent 6 }}
+
