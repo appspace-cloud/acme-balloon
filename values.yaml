@@ -1,6 +1,6 @@
 name: "acme-balloon"
 namespace: "acme-balloon"
-replicas: 10
+replicas: 3
 
 priorityClass:
   balloon:
@@ -16,7 +16,7 @@ container:
   args: ["infinity"]
   resources:
     requests:
-      cpu: "1m"
+      cpu: "100m"
       memory: "8Mi"
 
 terminationGracePeriodSeconds: 0
@@ -42,5 +42,5 @@ topologySpreadConstraints:
         app.kubernetes.io/name: acme-balloon
     maxSkew: 1
     topologyKey: "kubernetes.io/hostname"
-    whenUnsatisfiable: "ScheduleAnyway"
+    whenUnsatisfiable: "DoNotSchedule"
 
