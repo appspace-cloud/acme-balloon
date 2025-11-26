@@ -35,6 +35,15 @@ affinity:
             - key: "gke_node_type"
               operator: "In"
               values: ["spot-default"]
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+            - key: "app.kubernetes.io/name"
+              operator: "In"
+              values:
+                - "acme-balloon"
+        topologyKey: "kubernetes.io/hostname"
 
 topologySpreadConstraints:
   - labelSelector:
