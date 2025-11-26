@@ -1,0 +1,12 @@
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: default-priority
+  labels:
+    {{- include "acme-balloon.labels" . | nindent 4 }}
+value: {{ .Values.priorityClass.default.value | default 0 }}
+preemptionPolicy: PreemptLowerPriority
+globalDefault: true
+description: "The global default priority."
+
