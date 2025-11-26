@@ -7,9 +7,8 @@ metadata:
   labels:
     {{- include "acme-balloon.labels" . | nindent 4 }}
 spec:
-  # Ensure at least one pod is always available
-  # This prevents complete disruption of the balloon service
-  minAvailable: 1
+  {{- /* Auto-generated PDB: allows 100% disruption (only exists to silence GKE Insights warnings) */}}
+  maxUnavailable: 100%
   selector:
     matchLabels:
       {{- include "acme-balloon.selectorLabels" . | nindent 6 }}
