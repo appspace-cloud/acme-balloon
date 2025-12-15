@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  acme-balloon:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-12-15T10:04:41.243101862Z"
+    description: ACME Balloon Helm chart for Kubernetes cluster resource management
+    digest: da3f772cff93f63fb0bfbde831882ab86996f37ab284009f18aa304f52b4fa12
+    home: https://appspace.com
+    maintainers:
+    - name: AppSpace Cloud Team
+    name: acme-balloon
+    type: application
+    urls:
+    - https://appspace-cloud.github.io/acme-balloon/acme-balloon-0.1.8.tgz
+    version: 0.1.8
+generated: "2025-12-15T10:04:41.242109697Z"
