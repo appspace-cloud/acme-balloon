@@ -16,11 +16,11 @@ container:
   args: ["infinity"]
   resources:
     requests:
-      cpu: "100m"
-      memory: "64Mi"
+      cpu: "50m"
+      memory: "24Mi"
     limits:
-      cpu: "100m"
-      memory: "64Mi"
+      cpu: "50m"
+      memory: "24Mi"
 
 terminationGracePeriodSeconds: 0
 
